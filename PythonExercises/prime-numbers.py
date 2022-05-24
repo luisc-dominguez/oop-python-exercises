@@ -1,1 +1,0 @@
-#Prime Numbers exercise using Python
