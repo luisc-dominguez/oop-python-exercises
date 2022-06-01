@@ -1,33 +1,24 @@
 from Rectangle import Rectangle
-
+from tokenize import Double
 class Square(Rectangle):
         
-    def __init__(self, color, filled, side = 1.0):
+    def __init__(self, color: str, filled: bool, side: Double = 1.0):
         super().__init__(color, filled)
         self.side = side
         
-    def getSide(self):
-        return self.side
+    def getSide(self) -> Double:
+        return self.getWidth()
     
-    def setSide(self, side):
-        self.side = side
-    
-    def getArea(self):
-        super().getArea()
-        return self.side * self.side
-    
-    def getPerimeter(self):
-        super().getPerimeter()
-        return self.side * 4
+    def setSide(self, side: Double):
+        self.setWidth(side)
+        self.setLength(side)
 
-    def setWidth():
-        super().setWidth()
-        self.side = self.width
+    def setWidth(self, side: Double):
+        self.width = side
     
-    def setLength():
-        super().setLength()
-        self.side = self.length
+    def setLength(self, side: Double):
+        self.lenght = side
     
-    def __str__(self):
-        _string = f"Square[ Rectangle[ Shape[ color: {self.color}, filled = {self.filled}], width = {self.width}, lenght = {self.length}]"
+    def __str__(self) -> str:
+        _string = f"Square[Rectangle[Shape[color= {self.color},filled= {self.filled}],width= {self.width},lenght= {self.length}]\n"
         return _string

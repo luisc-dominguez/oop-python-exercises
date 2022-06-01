@@ -11,7 +11,7 @@ def testShape(Shape):
     print(s1)
 
 def testCircle(Circle):
-    c1 = Circle("red", True, 1.0)
+    c1 = Circle("yellow", False, 5.0)
     c1.getArea()
     c1.getPerimeter()
     print(c1)
