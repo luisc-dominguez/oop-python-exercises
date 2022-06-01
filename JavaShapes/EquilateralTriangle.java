@@ -1,4 +1,4 @@
-package shapes;
+package JavaShapes;
 public class EquilateralTriangle extends Shape {  
 
     private double sideLength; 

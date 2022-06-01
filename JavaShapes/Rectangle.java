@@ -1,4 +1,4 @@
-package shapes;
+package JavaShapes;
 public class Rectangle extends Shape {  
 
     private double width; 

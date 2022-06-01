@@ -1,5 +1,6 @@
-package shapes;
+package JavaShapes;
 
+//TO-DO: Finish test class and instances.
 public class TestShapes {
 
     public static void main (String[] args) {
